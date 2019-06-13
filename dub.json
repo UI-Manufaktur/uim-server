@@ -1,0 +1,39 @@
+{
+	"name": "server",
+	"authors": [
+		"uim"
+	],
+	"description": "A minimal D application.",
+	"copyright": "Copyright © 2019, uim",
+	"license": "proprietary",
+	"targetType": "library",
+	"dependencies": {
+		"vibe-d": "==0.8.5",
+		"uim-core": "~master",
+		"uim-oop": "~master",
+		"uim-css": "~master",
+		"uim-vue": "~master"
+    },
+	"sourcePaths": [
+		"../../LIBRARIES/data",
+		"../../LIBRARIES/web",
+		"../../LIBRARIES/json",
+		"../../LIBRARIES/js",
+		"../../LIBRARIES/html",
+		"../../LIBRARIES/bs4",
+		"../../LIBRARIES/bsv",
+		"../../LIBRARIES/restapi",
+		"./"
+	],
+	"importPaths": [
+		"../../LIBRARIES/data",
+		"../../LIBRARIES/web",
+		"../../LIBRARIES/js",
+		"../../LIBRARIES/json",
+		"../../LIBRARIES/html",
+		"../../LIBRARIES/bs4",
+		"../../LIBRARIES/bsv",
+		"../../LIBRARIES/restapi",
+		"./"
+	]
+}
