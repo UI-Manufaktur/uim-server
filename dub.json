@@ -1,7 +1,7 @@
 {
 	"name": "uim-server",
 	"authors": [ "UI Manufaktur Team" ],
-	"description": "D Library for Server",
+	"description": "[Test] D Library for Server",
 	"copyright": "Copyright © 2019, UI Manufaktur UG",
 	"license": "Apache 2.0",
 	"targetType": "library",
@@ -17,6 +17,6 @@
 		"uim-bootstrap": "~>0.19.6",
 		"uim-vue": "~>0.19.6,
 		"uim-bootstrap-vue": "~>0.19.6,
-		"uim-rest-api": "~>0.19.6"
+		"uim-server-api": "~>0.19.6"
 	}
 }
