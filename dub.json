@@ -1,39 +1,22 @@
 {
-	"name": "server",
-	"authors": [
-		"uim"
-	],
-	"description": "A minimal D application.",
-	"copyright": "Copyright © 2019, uim",
-	"license": "proprietary",
+	"name": "uim-server",
+	"authors": [ "UI Manufaktur Team" ],
+	"description": "D Library for Server",
+	"copyright": "Copyright © 2019, UI Manufaktur UG",
+	"license": "Apache 2.0",
 	"targetType": "library",
 	"dependencies": {
-		"vibe-d": "==0.8.5",
-		"uim-core": "~master",
-		"uim-oop": "~master",
-		"uim-css": "~master",
-		"uim-vue": "~master"
-    },
-	"sourcePaths": [
-		"../../LIBRARIES/data",
-		"../../LIBRARIES/web",
-		"../../LIBRARIES/json",
-		"../../LIBRARIES/js",
-		"../../LIBRARIES/html",
-		"../../LIBRARIES/bs4",
-		"../../LIBRARIES/bsv",
-		"../../LIBRARIES/restapi",
-		"./"
-	],
-	"importPaths": [
-		"../../LIBRARIES/data",
-		"../../LIBRARIES/web",
-		"../../LIBRARIES/js",
-		"../../LIBRARIES/json",
-		"../../LIBRARIES/html",
-		"../../LIBRARIES/bs4",
-		"../../LIBRARIES/bsv",
-		"../../LIBRARIES/restapi",
-		"./"
-	]
+		"vibe-d:data": "==0.8.5",
+		"uim-core": "~>0.19.6",
+		"uim-oop": "~>0.19.6",
+		"uim-web": "~>0.19.6",
+		"uim-html": "~>0.19.6",
+		"uim-js": "~>0.19.6",
+		"uim-json": "~>0.19.6",
+		"uim-bootstrap": "~>0.19.6"
+		"uim-bootstrap": "~>0.19.6",
+		"uim-vue": "~>0.19.6,
+		"uim-bootstrap-vue": "~>0.19.6,
+		"uim-rest-api": "~>0.19.6"
+	}
 }

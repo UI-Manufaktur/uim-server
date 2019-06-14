@@ -15,9 +15,9 @@ public import uim.css;
 public import uim.json;
 public import uim.js;
 public import uim.html;
-public import uim.bs4;
+public import uim.bootstrap;
 public import uim.vue;
-public import uim.bsv;
+public import uim.bootstrap.vue;
 public import uim.rest.api;
 
 public import uim.server.logging;
