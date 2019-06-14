@@ -16,7 +16,7 @@
 		"uim-bootstrap": "~>0.19.6"
 		"uim-bootstrap": "~>0.19.6",
 		"uim-vue": "~>0.19.6,
-		"uim-bootstrap-vue": "~>0.19.6,
+		"uim-bootstrap-vue": "~>0.19.6",
 		"uim-server-api": "~>0.19.6"
 	}
 }
