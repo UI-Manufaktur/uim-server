@@ -7,18 +7,9 @@ public import std.uuid;
 
 public import vibe.d;
 
-public import uim.oop;
 public import uim.core;
-public import uim.data;
-public import uim.web;
-public import uim.css;
-public import uim.json;
-public import uim.js;
-public import uim.html;
-public import uim.bootstrap;
-public import uim.vue;
-public import uim.bootstrap.vue;
-public import uim.rest.api;
+public import uim.oop;
+public import uim.server.api;
 
 public import uim.server.logging;
 

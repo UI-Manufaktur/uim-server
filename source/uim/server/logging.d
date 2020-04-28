@@ -37,18 +37,24 @@ string[string] readFromRequest(HTTPServerRequest req, string[] names) {
 
 string[string] readFromRequest(HTTPServerRequest req, string[string] values = null) {
 	string[string] result = values;
-//	result["lang"] = readFromRequest(req, "lang", "en");
-//	result["url"] = req.requestURL;
-//	result["path"] = req.path;
-//	result["contentType"] = req.contentType;
-//	result["host"] = req.host;
-//	result["password"] = req.password;
-//	result["peer"] = req.peer;
-//	result["queryString"] = req.queryString;
-//	result["qString"] = "?"~result["queryString"];
-//	result["userName"] = req.username;
-//	result["rootDir"] = req.rootDir;
-	
+	try {
+		result["time"] = to!string(now);
+		result["jstime"] = to!string(now);
+		result["date"] = now().toISOExtString;
+		result["lang"] = readFromRequest(req, "lang", "en");
+		result["url"] = req.requestURL;
+		result["path"] = req.path;
+		result["contentType"] = req.contentType;
+		result["host"] = req.host;
+		result["password"] = req.password;
+		result["peer"] = req.peer;
+		result["queryString"] = req.queryString;
+		result["qString"] = "?"~result["queryString"];
+		result["userName"] = req.username;
+		result["rootDir"] = req.rootDir;
+	}
+	catch(Exception e) { writeln(e); }
+
 	foreach(k, v; req.query) if (k !in result) result[k] = v; else result[k] = result[k]~","~v; 
 	foreach(k, v; req.form) if (k !in result) result[k] = v; else result[k] = result[k]~","~v;
 	foreach(k, v; req.params) if (k !in result) result[k] = v; else result[k] = result[k]~","~v;
